@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "mbox-thread-graph"
+version = "0.1.0"
+description = "Read a local mbox, select the last References ID or In-Reply-To fallback, expose missing/cyclic edges and connected thread components, with full SHA-256 IDs and no subjects, addresses or bodies."
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+authors = [{name = "Nripanka Das"}]
+[project.scripts]
+mbox-thread-graph = "mbox_thread_graph:main"
+[project.urls]
+Source = "https://github.com/nripankadas07/mbox-thread-graph"
+Issues = "https://github.com/nripankadas07/mbox-thread-graph/issues"
+[tool.setuptools]
+py-modules = ["mbox_thread_graph"]

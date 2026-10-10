@@ -1,0 +1,20 @@
+[
+  {
+    "args": [
+      "sample.mbox"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "missing-parent.mbox"
+    ],
+    "exit": 1
+  },
+  {
+    "args": [
+      "invalid.txt"
+    ],
+    "exit": 2
+  }
+]
